@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CKodeLab</title>
-    <link rel="stylesheet" href="https://github.com/KrishChothani/Flask-Learning/blob/main/Project-1/static/css/style.css">
+    <link rel="stylesheet" href={{ url_for('static' , filename='css/style.css')}}>
+    <script rel='text/javascript' src="{{ url_for('static' , filename='script/script.js')}}"> 
+      
+    </script>
 </head>
 <body>
-    <h1> Welcome to CKodeLab</h1>
-    <h2>HTML Forms</h2>
-
-<form action="/submit" method='post'>
-  <label for="Science">Science:</label><br>
-  <input type="text" id="science" name="science" value="0"><br>
-  <label for="Maths">Maths:</label><br>
-  <input type="text" id="maths" name="maths" value="0"><br><br>
-  <label for="C ">C:</label><br>
-  <input type="text" id="c" name="c" value="0"><br><br>
-  <label for="datascience">Data Science:</label><br>
-  <input type="text" id="datascience" name="datascience" value="0"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
-    
+    <div class="container">
+        <header>
+            <h1>Welcome to CKodeLab</h1>
+            <h2>HTML Forms</h2>
+        </header>
+        
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="science">Science:</label>
+                <input type="text" id="science" name="science" value="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="maths">Maths:</label>
+                <input type="text" id="maths" name="maths" value="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="c">C:</label>
+                <input type="text" id="c" name="c" value="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="datascience">Data Science:</label>
+                <input type="text" id="datascience" name="datascience" value="0">
+            </div>
+            
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+        
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+    </div>
 </body>
 </html>
