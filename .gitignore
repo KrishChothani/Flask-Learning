@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.VENV/
+
+# Flask config and instance folder (for sensitive information)
+instance/
+config.py
+*.env
+
+# Local development logs
+*.log
+
+# Database
+*.sqlite3
+*.db
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# MacOS specific
+.DS_Store
+
+# Python egg
+*.egg-info/
+.eggs/
+
+# Cache files
+*.cache
+*.bak
+
+# IDE specific (optional)
+.idea/

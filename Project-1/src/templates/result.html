@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>  CKodeLab  Result</h1>
+    {# <h2> Result is {{result }} </h2> #} 
+    
+    {# {% if result>=50 %} <h1>You are passed</h1> {% else %} <h1> You are Failed </h1>    {% endif %} #}
+    
+    <table border=2>
+        {% for key, value in result.items() %} <h1> 
+            <tr>
+                <th>{{key }}</th>
+                <th> {{ value}} </th>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
