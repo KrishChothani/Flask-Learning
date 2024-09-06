@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Apply these styles to your input fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  background-color: #3CBC8D;
+  color: white;
+  outline: none; /* Remove default focus outline */
+  transition: width 0.4s ease-in-out; /* Animated search input */
+}
+
+/* Apply these styles to focused input fields */
+input[type="text"]:focus {
+  background-color: lightblue;
+  /* Or add a custom border on focus */
+  border: 3px solid #555;
+}
+
+/* Apply these styles to input fields with an icon */
+input[type="text"] {
+  background-color: white;
+  background-image: url('searchicon.png'); /* Replace with your actual icon */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
